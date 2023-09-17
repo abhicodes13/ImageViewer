@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>ImageViewer</title>
+    <link rel="shortcut icon" href="tiles.png" type="image/x-icon">
 </head>
 <body>
-    <div class="full-img">
-        <img src="img1.jpg">
-        <span>X</span>
+    <div class="full-img" id="fullImgBox">
+        <img src="img1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
     </div>
     <div class="image-box">
-        <img src="img1.jpg">
-        <img src="img2.jpg">
-        <img src="img3.jpg">
-        <img src="img4.jpg">
-        <img src="img5.jpg">
-        <img src="img6.jpg">
-        <img src="img7.jpg">
-        <img src="img8.jpg">
+        <img src="img1.jpg" onclick="openFullImg(this.src)">
+        <img src="img2.jpg" onclick="openFullImg(this.src)">
+        <img src="img3.jpg" onclick="openFullImg(this.src)">
+        <img src="img4.jpg" onclick="openFullImg(this.src)">
+        <img src="img5.jpg" onclick="openFullImg(this.src)">
+        <img src="img6.jpg" onclick="openFullImg(this.src)">
+        <img src="img7.jpg" onclick="openFullImg(this.src)">
+        <img src="img8.jpg" onclick="openFullImg(this.src)">
     </div>
     <h1 style="text-align: center; margin-top: 40px; font: 1.5em sans-serif; ">Developed by Abhi <br> <span><h5>w/ GreatStack</h6></span></h1>
+        <script src="script.js"></script>
 </body>
 </html> 
